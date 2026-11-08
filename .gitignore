@@ -1,0 +1,11 @@
+.idea/workspace.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/*.iml
+error_log
+vendor/
+.idea/webServers.xml
+/test
+/docs_working/~*.*
+/phpunit/.phpunit.result.cache
+/composer.phar
