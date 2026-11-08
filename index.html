@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15th Annual Flower Mound Big Book Study (2027)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Inter & Merriweather for warm typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            700: '#44403c',
+                            800: '#292524',
+                            900: '#1c1917',
+                        },
+                        forest: {
+                            700: '#2d5a27',
+                            800: '#1e3a1a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold font-serif text-lg shadow">
+                    15
+                </div>
+                <span class="font-bold text-lg sm:text-xl text-stone-900 tracking-tight font-serif">
+                    Flower Mound Big Book Study
+                </span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-amber-700 transition-colors">About</a>
+                <a href="#details" class="hover:text-amber-700 transition-colors">Details</a>
+                <a href="#schedule" class="hover:text-amber-700 transition-colors">Schedule</a>
+                <a href="#bringing" class="hover:text-amber-700 transition-colors">What to Bring</a>
+                <a href="#payment" class="hover:text-amber-700 transition-colors">Payment</a>
+                <a href="#location" class="hover:text-amber-700 transition-colors">Location</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="#payment" class="bg-amber-700 hover:bg-amber-800 text-white font-medium text-sm px-4 py-2 rounded-lg shadow-sm hover:shadow transition-all flex items-center space-x-1.5">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                    <span>Register ($150)</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section class="relative bg-stone-900 text-white overflow-hidden py-20 lg:py-28">
+            <!-- Background Image Overlay -->
+            <div class="absolute inset-0 z-0 opacity-35 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-transparent z-0"></div>
+
+            <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center space-x-2 bg-amber-500/20 text-amber-300 border border-amber-500/40 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    <span>January 15 – 17, 2027 • Kingston, OK</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif tracking-tight text-white mb-6 leading-tight">
+                    15th Annual Flower Mound <br class="hidden sm:inline"/>Big Book Study (2027)
+                </h1>
+
+                <p class="max-w-2xl mx-auto text-lg sm:text-xl text-stone-300 font-light mb-8 leading-relaxed">
+                    An immersive weekend retreat dedicated to deep study, fellowship, and spiritual growth in the Big Book of Alcoholics Anonymous.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#payment" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-semibold text-base px-8 py-3.5 rounded-xl shadow-lg hover:shadow-amber-600/20 transition-all flex items-center justify-center space-x-2">
+                        <span>Reserve Your Spot – $150</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#schedule" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-medium text-base px-6 py-3.5 rounded-xl border border-white/20 backdrop-blur-sm transition-all flex items-center justify-center space-x-2">
+                        <i data-lucide="clock" class="w-5 h-5 text-amber-400"></i>
+                        <span>View Weekend Schedule</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Banner -->
+        <section class="bg-amber-700 text-white py-8 px-4 sm:px-6 lg:px-8 shadow-inner">
+            <div class="max-w-4xl mx-auto text-center">
+                <i data-lucide="quote" class="w-8 h-8 mx-auto mb-2 text-amber-300 opacity-60"></i>
+                <blockquote class="font-serif text-xl sm:text-2xl italic font-light leading-relaxed text-amber-50">
+                    “Our real purpose is to fit ourselves to be of maximum service to God and the people about us.”
+                </blockquote>
+                <p class="text-xs uppercase tracking-widest text-amber-200 font-semibold mt-3">— Big Book, page 77</p>
+            </div>
+        </section>
+
+        <!-- Overview & Format -->
+        <section id="about" class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-stone-50 rounded-2xl p-6 sm:p-10 border border-stone-200 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8">
+                        <div class="inline-flex items-center space-x-2 text-amber-700 font-semibold text-sm mb-2">
+                            <i data-lucide="book-open" class="w-4 h-4"></i>
+                            <span>Study Format & Scope</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-stone-900 mb-4">
+                            Intensive Big Book Reading
+                        </h2>
+                        <p class="text-stone-600 text-base leading-relaxed mb-4">
+                            Together, we will read line-by-line through the foundational text of Alcoholics Anonymous, starting from the <strong>Preface up to page 164</strong>.
+                        </p>
+                        <div class="bg-amber-50 border-l-4 border-amber-600 p-4 rounded-r-lg">
+                            <p class="text-sm text-amber-900">
+                                <span class="font-semibold">Format Note:</span> We cover all text from the Preface through page 164, <em>except</em> for two chapters: <span class="underline font-medium">“To the Wives”</span> and <span class="underline font-medium">“To the Employers”</span>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 bg-white p-6 rounded-xl border border-stone-200 text-center shadow-xs">
+                        <div class="w-16 h-16 bg-amber-100 text-amber-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="users" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-stone-900 text-lg mb-1">Small Group Focus</h3>
+                        <p class="text-xs text-stone-500">Shared reading, reflection, and community building in a secluded lake retreat setting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Details Cards -->
+        <section id="details" class="py-12 bg-stone-50 border-t border-stone-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-3xl font-bold font-serif text-stone-900 mb-2">At a Glance</h2>
+                    <p class="text-stone-600">Essential retreat information for planning your weekend.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Dates Card -->
+                    <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="calendar" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-stone-900 mb-2">Dates & Times</h3>
+                        <p class="text-sm font-semibold text-amber-800 mb-1">Jan 15 – Jan 17, 2027</p>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            <span class="font-medium text-stone-800">Start:</span> Friday, Jan 15 @ 6:00 PM<br/>
+                            <span class="font-medium text-stone-800">Ends:</span> Sunday, Jan 17 @ 12:00 PM
+                        </p>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-800 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-stone-900 mb-2">Retreat Location</h3>
+                        <p class="text-sm text-stone-700 leading-relaxed font-medium">
+                            12177 Lark Cemetery Rd<br/>
+                            Kingston, OK 73439
+                        </p>
+                        <a href="#location" class="inline-flex items-center text-xs font-semibold text-emerald-700 hover:text-emerald-800 mt-3">
+                            <span>View directions & map</span>
+                            <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Cost Card -->
+                    <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-800 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-stone-900 mb-2">All-Inclusive Fee</h3>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="text-3xl font-extrabold text-stone-900">$150</span>
+                            <span class="text-xs text-stone-500">per participant</span>
+                        </div>
+                        <p class="text-xs text-stone-600 mt-2">
+                            Covers lodging, 5 full meals, snacks, and retreat materials.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What to Bring & Lodging Section -->
+        <section id="bringing" class="py-16 bg-white border-t border-stone-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-3xl font-bold font-serif text-stone-900 mb-2">What to Bring & Lodging</h2>
+                    <p class="text-stone-600">Please review accommodation and meal details carefully before arriving.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Item 1: Big Book -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold">
+                                1
+                            </div>
+                            <h3 class="font-bold text-lg text-stone-900">Your Big Book</h3>
+                        </div>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Bring your personal Alcoholics Anonymous Big Book (4th Edition recommended) along with highlighters or pens for taking notes during study sessions.
+                        </p>
+                    </div>
+
+                    <!-- Item 2: Sleeping Arrangements -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold">
+                                2
+                            </div>
+                            <h3 class="font-bold text-lg text-stone-900">Sleeping & Air Mattresses</h3>
+                        </div>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            There are beds available for 12–13 participants (some shared beds).
+                        </p>
+                        <div class="bg-white p-3 rounded-lg border border-stone-200 text-xs text-stone-700 space-y-2">
+                            <p class="flex items-start space-x-2">
+                                <i data-lucide="award" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+                                <span><strong>Bed Assignments:</strong> Based on length of sobriety & at the discretion of organizers 😊</span>
+                            </p>
+                            <p class="flex items-start space-x-2">
+                                <i data-lucide="bed" class="w-4 h-4 text-stone-500 shrink-0 mt-0.5"></i>
+                                <span>Bring an <strong>air mattress</strong> if you need a bed beyond availability or prefer not to share a bed.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Food & Meals -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-amber-700 text-white flex items-center justify-center font-bold">
+                                3
+                            </div>
+                            <h3 class="font-bold text-lg text-stone-900">Meals & Dietary Needs</h3>
+                        </div>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            We will prepare meals together as a group! <strong>5 full meals and snacks</strong> are provided.
+                        </p>
+                        <ul class="text-xs text-stone-700 space-y-1.5 bg-white p-3 rounded-lg border border-stone-200">
+                            <li class="flex items-center space-x-2">
+                                <i data-lucide="utensils" class="w-3.5 h-3.5 text-amber-600"></i>
+                                <span>Simple meals (sandwiches, pizza) during study hours</span>
+                            </li>
+                            <li class="flex items-center space-x-2 font-semibold text-amber-900">
+                                <i data-lucide="flame" class="w-3.5 h-3.5 text-amber-600"></i>
+                                <span>Saturday Night: Steak Dinner</span>
+                            </li>
+                            <li class="flex items-center space-x-2 font-semibold text-amber-900">
+                                <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-600"></i>
+                                <span>Sunday Morning: Waffles Breakfast</span>
+                            </li>
+                            <li class="flex items-center space-x-2 text-stone-500 pt-1 border-t border-stone-100">
+                                <i data-lucide="info" class="w-3.5 h-3.5 text-stone-400"></i>
+                                <span>Please bring your own personal snacks or special dietary items.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section with Tabs -->
+        <section id="schedule" class="py-16 bg-stone-50 border-t border-stone-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold font-serif text-stone-900 mb-2">Weekend Schedule</h2>
+                    <p class="text-stone-600 mb-4">An organized breakdown of reading sessions, meals, and fellowship.</p>
+                    <div class="inline-flex items-center space-x-2 text-xs text-amber-800 bg-amber-100 border border-amber-200 rounded-full px-4 py-1.5 font-medium">
+                        <i data-lucide="alert-circle" class="w-4 h-4"></i>
+                        <span>* Start and end times are fixed; rest of schedule is subject to minor adjustments.</span>
+                    </div>
+                </div>
+
+                <!-- Schedule Tabs -->
+                <div class="flex justify-center mb-8">
+                    <div class="bg-white p-1.5 rounded-xl border border-stone-200 shadow-sm flex space-x-2">
+                        <button onclick="switchTab('friday')" id="tab-friday" class="tab-btn active px-6 py-2.5 rounded-lg text-sm font-semibold transition-all bg-amber-700 text-white shadow-xs">
+                            Friday (Jan 15)
+                        </button>
+                        <button onclick="switchTab('saturday')" id="tab-saturday" class="tab-btn px-6 py-2.5 rounded-lg text-sm font-semibold transition-all text-stone-600 hover:text-stone-900">
+                            Saturday (Jan 16)
+                        </button>
+                        <button onclick="switchTab('sunday')" id="tab-sunday" class="tab-btn px-6 py-2.5 rounded-lg text-sm font-semibold transition-all text-stone-600 hover:text-stone-900">
+                            Sunday (Jan 17)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Friday Content -->
+                <div id="content-friday" class="tab-content bg-white rounded-2xl border border-stone-200 shadow-sm p-6 sm:p-8">
+                    <h3 class="text-lg font-bold font-serif text-stone-900 mb-6 flex items-center space-x-2">
+                        <i data-lucide="moon" class="w-5 h-5 text-amber-600"></i>
+                        <span>Friday Evening Schedule</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-md">6:00 PM</span>
+                                <span class="font-semibold text-stone-900">Dinner</span>
+                            </div>
+                            <span class="text-xs text-stone-500 mt-1 sm:mt-0">Group meal & fellowship</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-50 hover:bg-stone-100 transition-colors border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-md">7:00 PM</span>
+                                <span class="font-semibold text-stone-900">Opening Remarks</span>
+                            </div>
+                            <span class="text-xs text-stone-500 mt-1 sm:mt-0">Welcome & orientation</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">7:15 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Preface / Forewords</span>
+                                    <p class="text-xs text-stone-500">Study Session 1</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Big Book Study</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">8:15 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Doctor's Opinion</span>
+                                    <p class="text-xs text-stone-500">Study Session 2</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Big Book Study</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">9:15 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Bill's Story</span>
+                                    <p class="text-xs text-stone-500">Chapter 1</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Big Book Study</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saturday Content -->
+                <div id="content-saturday" class="tab-content hidden bg-white rounded-2xl border border-stone-200 shadow-sm p-6 sm:p-8">
+                    <h3 class="text-lg font-bold font-serif text-stone-900 mb-6 flex items-center space-x-2">
+                        <i data-lucide="sun" class="w-5 h-5 text-amber-600"></i>
+                        <span>Saturday All-Day Schedule</span>
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-stone-50 border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-stone-700 bg-stone-200 px-3 py-1 rounded-md">6:00 AM</span>
+                                <span class="font-semibold text-stone-900">10-Minute Meditation (3rd Step)</span>
+                            </div>
+                            <span class="text-xs text-emerald-700 font-medium bg-emerald-50 px-2.5 py-1 rounded-full mt-1 sm:mt-0 self-start sm:self-auto">Optional</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-stone-50 border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-md">8:00 AM</span>
+                                <span class="font-semibold text-stone-900">Breakfast</span>
+                            </div>
+                            <span class="text-xs text-stone-500">Group meal</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">9:00 AM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">There Is a Solution</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 2</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">10:00 AM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">More About Alcoholism</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 3</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">11:00 AM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">We Agnostics</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 4</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">12:00 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">How It Works</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 5</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-stone-100 border border-stone-200">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-stone-700 bg-stone-200 px-3 py-1 rounded-md">1:00 PM</span>
+                                <span class="font-semibold text-stone-900">Lunch & Afternoon Break</span>
+                            </div>
+                            <span class="text-xs text-stone-500">Free time / Rest</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-100/70 border border-amber-300">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-900 bg-amber-300 px-3 py-1 rounded-md">5:30 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Steak Dinner 🥩</span>
+                                    <span class="text-xs text-amber-900 block">Featured Saturday Night Feast</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold text-amber-900 bg-amber-200 px-2.5 py-1 rounded-full">Special Dinner</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">6:30 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Into Action</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 6</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">8:00 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Working with Others</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 7</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">9:00 PM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">The Family Afterward</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 9</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Big Book Study</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sunday Content -->
+                <div id="content-sunday" class="tab-content hidden bg-white rounded-2xl border border-stone-200 shadow-sm p-6 sm:p-8">
+                    <h3 class="text-lg font-bold font-serif text-stone-900 mb-6 flex items-center space-x-2">
+                        <i data-lucide="sunrise" class="w-5 h-5 text-amber-600"></i>
+                        <span>Sunday Morning Schedule</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-50 border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-stone-700 bg-stone-200 px-3 py-1 rounded-md">6:00 AM</span>
+                                <span class="font-semibold text-stone-900">10-Minute Meditation (3rd Step)</span>
+                            </div>
+                            <span class="text-xs text-emerald-700 font-medium bg-emerald-50 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Optional</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-amber-100/70 border border-amber-300">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-900 bg-amber-300 px-3 py-1 rounded-md">7:30 AM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">Waffles Breakfast 🧇</span>
+                                    <span class="text-xs text-amber-900 block">Sunday Morning Special</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold text-amber-900 bg-amber-200 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Breakfast</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-amber-50/50 border border-amber-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-800 bg-amber-200 px-3 py-1 rounded-md">8:15 AM</span>
+                                <div>
+                                    <span class="font-bold text-stone-900">A Vision for You</span>
+                                    <span class="text-xs text-stone-500 block">Chapter 11 (Concluding Study Session)</span>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full mt-2 sm:mt-0 self-start sm:self-auto">Final Study</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-50 border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-stone-700 bg-stone-200 px-3 py-1 rounded-md">9:30 AM</span>
+                                <span class="font-semibold text-stone-900">Cleanup & Pack</span>
+                            </div>
+                            <span class="text-xs text-stone-500 mt-2 sm:mt-0">Group effort</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-50 border border-stone-200/60">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-stone-700 bg-stone-200 px-3 py-1 rounded-md">10:15 AM</span>
+                                <span class="font-semibold text-stone-900">Closing / Wrap-Up / Financial Reports ($)</span>
+                            </div>
+                            <span class="text-xs text-stone-500 mt-2 sm:mt-0">Final circle</span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-stone-900 text-white">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-mono text-sm font-bold text-amber-400 bg-stone-800 px-3 py-1 rounded-md">11:00 AM</span>
+                                <span class="font-bold">Checkout & Safe Travels</span>
+                            </div>
+                            <span class="text-xs text-stone-400 mt-2 sm:mt-0">Event Concludes at 12:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Options Section -->
+        <section id="payment" class="py-16 bg-white border-t border-stone-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-amber-700 font-semibold text-xs uppercase tracking-wider">Registration & Payment</span>
+                    <h2 class="text-3xl font-bold font-serif text-stone-900 mt-1 mb-3">How to Pay Your Registration</h2>
+                    <p class="text-stone-600 text-base">
+                        The registration fee is <strong>$150 per person</strong>. Choose your preferred payment method below.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Direct to Brad Lacy -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between hover:border-amber-500 transition-all">
+                        <div>
+                            <div class="w-10 h-10 bg-amber-100 text-amber-800 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="user-check" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-stone-900 mb-1">Direct to Brad</h3>
+                            <p class="text-xs text-stone-500 mb-4">In person or by mail</p>
+                            <p class="text-xs text-stone-600 leading-relaxed">
+                                You can give your registration fee directly to <strong>Brad Lacy</strong> in person or send via mail.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-stone-200 text-xs font-semibold text-amber-800">
+                            Contact Brad for mailing address
+                        </div>
+                    </div>
+
+                    <!-- Zelle -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between hover:border-purple-500 transition-all">
+                        <div>
+                            <div class="w-10 h-10 bg-purple-100 text-purple-800 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="zap" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-stone-900 mb-1">Zelle</h3>
+                            <p class="text-xs text-stone-500 mb-4">Instant Bank Transfer</p>
+                            <div class="bg-white p-3 rounded-lg border border-stone-200 text-center font-mono text-xs text-stone-800 font-bold mb-2">
+                                214-668-0611
+                            </div>
+                            <p class="text-xs text-stone-500 text-center">Recipient: Brad Lacy</p>
+                        </div>
+                        <button onclick="copyToClipboard('214-668-0611', 'Zelle number copied!')" class="mt-4 w-full bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold py-2 px-3 rounded-lg transition-colors flex items-center justify-center space-x-1">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                            <span>Copy Zelle Number</span>
+                        </button>
+                    </div>
+
+                    <!-- Venmo -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between hover:border-sky-500 transition-all">
+                        <div>
+                            <div class="w-10 h-10 bg-sky-100 text-sky-800 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-stone-900 mb-1">Venmo</h3>
+                            <p class="text-xs text-stone-500 mb-4">Mobile App</p>
+                            <div class="bg-white p-3 rounded-lg border border-stone-200 text-center font-mono text-xs text-stone-800 font-bold mb-2">
+                                @Bradley-Lacy
+                            </div>
+                            <p class="text-xs text-stone-500 text-center">Include "Big Book Study 2027"</p>
+                        </div>
+                        <button onclick="copyToClipboard('@Bradley-Lacy', 'Venmo handle copied!')" class="mt-4 w-full bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold py-2 px-3 rounded-lg transition-colors flex items-center justify-center space-x-1">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                            <span>Copy Venmo Handle</span>
+                        </button>
+                    </div>
+
+                    <!-- PayPal Fallback -->
+                    <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between hover:border-blue-500 transition-all">
+                        <div>
+                            <div class="w-10 h-10 bg-blue-100 text-blue-800 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="credit-card" class="w-5 h-5"></i>
+                            </div>
+                            <h3 class="font-bold text-stone-900 mb-1">PayPal Fallback</h3>
+                            <p class="text-xs text-stone-500 mb-4">If other options don't work</p>
+                            <div class="bg-white p-2.5 rounded-lg border border-stone-200 font-mono text-[11px] text-stone-800 text-center break-all mb-2">
+                                laurinkeithdavis@gmail.com
+                            </div>
+                            <div class="bg-amber-100 text-amber-900 p-2 rounded text-[11px] font-semibold leading-tight mb-2">
+                                ⚠️ MUST select "Gift / Friends & Family" (Not Goods/Services)
+                            </div>
+                        </div>
+                        <button onclick="copyToClipboard('laurinkeithdavis@gmail.com', 'PayPal email copied!')" class="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold py-2 px-3 rounded-lg transition-colors flex items-center justify-center space-x-1">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                            <span>Copy PayPal Email</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="mt-8 bg-amber-50 rounded-xl p-4 border border-amber-200 text-center text-xs text-amber-900">
+                    <p><strong>Note on PayPal Payments:</strong> Payments to Laurin Davis will be forwarded directly to Brad Lacy to confirm your registration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Directions -->
+        <section id="location" class="py-16 bg-stone-50 border-t border-stone-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5">
+                        <span class="text-amber-700 font-semibold text-xs uppercase tracking-wider">Venue & Map</span>
+                        <h2 class="text-3xl font-bold font-serif text-stone-900 mt-1 mb-4">Retreat Location</h2>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            The study is held in a peaceful lakeside setting ideal for reflection, study, and fellowship in Kingston, OK.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-amber-700 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <p class="font-bold text-stone-900 text-sm">Address</p>
+                                    <p class="text-sm text-stone-600">12177 Lark Cemetery Rd<br/>Kingston, OK 73439</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="compass" class="w-5 h-5 text-amber-700 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <p class="font-bold text-stone-900 text-sm">Getting There</p>
+                                    <p class="text-xs text-stone-500">Easily accessible from North Texas / Lake Texoma area.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex space-x-3">
+                            <a href="https://maps.google.com/?q=12177+Lark+Cemetery+Rd,+Kingston,+OK+73439" target="_blank" rel="noopener noreferrer" class="bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow transition-colors flex items-center space-x-2">
+                                <i data-lucide="navigation" class="w-4 h-4"></i>
+                                <span>Open in Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-7 bg-white p-4 rounded-2xl border border-stone-200 shadow-sm">
+                        <!-- Map Visual Placeholder Container -->
+                        <div class="relative w-full h-72 bg-stone-200 rounded-xl overflow-hidden flex items-center justify-center">
+                            <iframe 
+                                title="Location Map"
+                                class="w-full h-full border-0"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.487979603058!2d-96.6905586!3d33.9180998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ca067e5630df3%3A0x6b403d987d609bd8!2s12177%20Lark%20Cemetery%20Rd%2C%20Kingston%2C%20OK%2073439!5e0!3m2!1sen!2sus!4v1700000000000">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-stone-900 text-white px-4 py-3 rounded-xl shadow-xl flex items-center space-x-2 transform translate-y-20 opacity-0 transition-all duration-300 z-50">
+        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400"></i>
+        <span id="toast-message" class="text-sm font-medium">Copied to clipboard!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-10 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-stone-800 pb-8 mb-6">
+                <div>
+                    <h3 class="text-white font-serif font-bold text-lg">15th Annual Flower Mound Big Book Study</h3>
+                    <p class="text-xs text-stone-500 mt-1">January 15 – 17, 2027 • Kingston, OK</p>
+                </div>
+                <div class="text-xs text-stone-400">
+                    <p>Questions? Contact retreat organizers for details.</p>
+                </div>
+            </div>
+            <div class="text-center md:text-left text-xs text-stone-500 flex flex-col sm:flex-row items-center justify-between">
+                <p>&copy; 2027 Flower Mound Big Book Study. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0 italic">“To fit ourselves to be of maximum service...”</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Schedule Tab Switching Logic
+        function switchTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Deactivate all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amber-700', 'text-white', 'shadow-xs');
+                btn.classList.add('text-stone-600');
+            });
+
+            // Show target content
+            const targetContent = document.getElementById('content-' + tabName);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+            }
+
+            // Activate target button
+            const targetBtn = document.getElementById('tab-' + tabName);
+            if (targetBtn) {
+                targetBtn.classList.add('bg-amber-700', 'text-white', 'shadow-xs');
+                targetBtn.classList.remove('text-stone-600');
+            }
+        }
+
+        // Clipboard Copy Helper
+        function copyToClipboard(text, successMessage) {
+            // Use standard textarea copy mechanism for cross-browser iframe safety
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast(successMessage || 'Copied to clipboard!');
+        }
+
+        // Toast Notification Trigger
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            
+            toastMsg.textContent = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
